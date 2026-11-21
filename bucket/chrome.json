@@ -1,0 +1,5 @@
+{
+    "version": "latest",
+    "url": "https://dl.google.com/dl/chrome/install/googlechromestandaloneenterprise64.msi",
+    "bin": "chrome.exe"
+}

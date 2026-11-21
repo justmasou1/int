@@ -1,0 +1,30 @@
+{
+    "version": "160.0-1",
+    "description": "A custom version of Firefox, focused on privacy, security and freedom.",
+    "homepage": "https://librewolf.net",
+    "license": "MPL-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://gitlab.com/api/v4/projects/44042130/packages/generic/librewolf/160.0-1/librewolf-160.0-1-windows-x86_64-portable.zip",
+            "bin": [
+                "LibreWolf-Portable.exe",
+                [
+                    "LibreWolf-Portable.exe",
+                    "librewolf"
+                ]
+            ]
+        }
+    },
+    "persist": "Profiles",
+    "checkver": {
+        "url": "https://librewolf.net/installation/windows/",
+        "regex": "librewolf-([\\d.-]+)-windows-x86_64-portable\\.zip"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://gitlab.com/api/v4/projects/44042130/packages/generic/librewolf/$version/librewolf-$version-windows-x86_64-portable.zip"
+            }
+        }
+    }
+}

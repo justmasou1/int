@@ -1,0 +1,40 @@
+{
+    "version": "8.7.5",
+    "description": "A free source code editor and Notepad replacement.",
+    "homepage": "https://notepad-plus-plus.org",
+    "license": "GPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.7.5/npp.8.7.5.portable.x64.7z"
+        }
+    },
+    "bin": "notepad++.exe",
+    "shortcuts": [
+        [
+            "notepad++.exe",
+            "Notepad++"
+        ]
+    ],
+    "persist": [
+        "backup",
+        "plugins",
+        "themes",
+        "userDefineLangs",
+        "config.xml",
+        "contextMenu.xml",
+        "langs.xml",
+        "session.xml",
+        "shortcuts.xml",
+        "stylers.xml"
+    ],
+    "checkver": {
+        "github": "https://github.com/notepad-plus-plus/notepad-plus-plus"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v$version/npp.$version.portable.x64.7z"
+            }
+        }
+    }
+}
