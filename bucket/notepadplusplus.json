@@ -12,20 +12,15 @@
     "shortcuts": [
         [
             "notepad++.exe",
-            "Notepad++"
+            "Notepad++",
+            "notepad-plus-plus"
         ]
     ],
     "persist": [
         "backup",
         "plugins",
         "themes",
-        "userDefineLangs",
-        "config.xml",
-        "contextMenu.xml",
-        "langs.xml",
-        "session.xml",
-        "shortcuts.xml",
-        "stylers.xml"
+        "userDefineLangs"
     ],
     "checkver": {
         "github": "https://github.com/notepad-plus-plus/notepad-plus-plus"

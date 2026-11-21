@@ -1,0 +1,17 @@
+{
+    "version": "0.1.0",
+    "description": "Roblox Player",
+    "homepage": "https://www.roblox.com",
+    "url": "https://setup.rbxcdn.com/version-0000000000000000-Roblox.exe#/Roblox.exe",
+    "installer": {
+        "script": "Start-Process -FilePath \"$dir\\Roblox.exe\" -Wait"
+    },
+    "checkver": {
+        "url": "https://clientsettingscdn.roblox.com/v2/client-version/WindowsPlayer",
+        "jsonpath": "$.clientVersionUpload",
+        "regex": "version-(?<hash>[a-f0-9]+)"
+    },
+    "autoupdate": {
+        "url": "https://setup.rbxcdn.com/version-$matchHash-Roblox.exe#/Roblox.exe"
+    }
+}
